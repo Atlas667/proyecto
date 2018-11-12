@@ -1,0 +1,7 @@
+@media (max-width: @screen-xs) {
+    .jumbotron{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    .jumbotron{font-size: 14px;}
+}
