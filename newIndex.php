@@ -21,21 +21,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li> 
-        <li class="nav-item">
-          <a class="nav-link" href="servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="productos.html">Productos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactanos.html">Contactanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Log in</a>
-        </li>
+        <?php
+          $menuList = ["Inicio", "Servicios", "Productos", "Contactanos", "Log in"];
+          foreach($menuList as $s){
+            echo '<li class="nav-item"><a class="nav-link" href="?p=' . $s . '">' . $s . '</a></li>';
+          }
+        ?>
         <li class="nav-item navbar-right">
           <a class="nav-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
