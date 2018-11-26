@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="#">MTD</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +33,7 @@
     <ul class="navbar-nav">
       <?php
         if(isset($_SESSION["username"])){
-            echo '<li class="nav-item"><a class="text-right btn btn-success" href="profile.php">' . $_SESSION["username"] . '</a></li> &nbsp;&nbsp;&nbsp;';
-
-            echo '<li class="nav-item"><a class="text-right btn btn-outline-danger" href="req/login_scripts.php?p=logout"> Log out </a></li>';
+            echo '<li class="nav-item"><a class="text-right btn btn-link" href="/req/login_scripts.php?p=logout">' . $_SESSION["username"] . '</a></li>';
           }
       ?>
     </ul>
