@@ -8,31 +8,9 @@
 
     </head>
     
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="index.html">MTD</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactanos.html">Contactanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="login.html">Log in</a>
-          </li>
-        </ul>
-    </div>
-</nav>
+    <?php
+      include "req/nav.php";
+    ?>
     
     <body style="margin-top:5%">
         
@@ -92,18 +70,10 @@
             </div>
         </main>
         
-        <footer class="footer">
-            <div class="container text-center">
-                <span class="text-muted">Millenium Tint & Design</span>
-                </br>
-                <span class="text-muted">Calle villa #301 Ponce, Puerto Rico</span>
-                </br>
-                <span class="text-muted">(787) 243-8373</span>
-                </br>
-                <!-- Add font awesome icons -->
-                <a href="https://www.facebook.com/Millennium-Tint-and-Detailing-275699582454140/" class="fa fa-facebook"></a>
-            </div>
-        </footer>
+        <!-- Footer -->
+        <?php
+          include("req/footer.php");
+        ?>
         
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

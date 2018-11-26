@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION["username"])){
+      header("Location: index.php");
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,31 +21,12 @@
   <br \>
   <br \>
   
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">MTD</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactanos.html">Contactanos</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Log in</a>
-              </li>
-            </ul>
-        </div>
-    </nav>
+  <?php
+    if(isset($_SESSION["username"])){
+
+    }
+    include "req/nav.php";
+  ?>
     
 
   <body style="background-color: #f5f5f5">
@@ -49,30 +35,28 @@
   	<br \>
     
     <main role="main" class="container col-md-5">
-        <form class="form-signin text-center">
+        <form action="login_scripts.php?p=login" method="post" class="form-signin text-center">
             <img class="mb-4" src="https://i.postimg.cc/y8h9BBgD/logo.png" alt="" width="144" height="144">
             <h1 class="h3 mb-3 font-weight-normal">Log in</h1>
-            <label for="inputEmail" class="sr-only">Email address</label>
-            <input id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="" type="email">
+            <!-- Email ó Username-->
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input name="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" type="text">
+            <!-- Password -->
             <label for="inputPassword" class="sr-only">Password</label>
-            <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
-            <div class="checkbox mb-3">
-                <label>
-                    <input value="remember-me" type="checkbox"> Remember me
-                </label>
-            </div>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            <input name="inputPassword" class="form-control" placeholder="Password" required="" type="password">
             <br \>
-            <a href="https://www.facebook.com/Millennium-Tint-and-Detailing-275699582454140/" class="fa fa-facebook"></a>
-            </br>
-            <span class="text-muted">Millenium Tint & Design</span>
-            </br>
-            <span class="text-muted">Calle villa #301 Ponce, Puerto Rico</span>
-            </br>
-            <span class="text-muted">(787) 243-8373</span>
-            </br>
+            <!-- Sign in Button -->
+            <button class="btn btn-lg btn-success btn-block" type="submit">Log in</button>
+            <br \>
         </form>
+        <button href="registrate.php" class="btn btn-lg btn-primary btn-block" >Registrate</button>
+        <br \>
     </main>
+
+    <!-- Footer -->
+    <?php
+      include("req/footer.php");
+    ?>
     
     <br \>
     <br \>
