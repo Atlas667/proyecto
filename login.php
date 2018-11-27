@@ -53,9 +53,9 @@
             <img class="mb-4" src="https://i.postimg.cc/y8h9BBgD/logo.png" alt="" width="144" height="144">
             <h1 class="h3 mb-3 font-weight-normal">Log in</h1>
             <label for="inputEmail" class="sr-only">Email address</label>
-            <input id="inputEmail" class="form-control" placeholder="Email" required="" autofocus="" type="email">
+            <input id="inputEmail" class="form-control" placeholder="Email" required="true" autofocus="" type="email">
             <label for="inputPassword" class="sr-only">Password</label>
-            <input id="inputPassword" class="form-control" placeholder="Password" required="" type="password">
+            <input id="inputPassword" class="form-control" placeholder="Password" required="true" type="password">
             <div class="checkbox mb-3">
                 <label>
                     <input value="remember-me" type="checkbox"> Remember me
@@ -70,7 +70,8 @@
             <span class="text-muted">Calle villa #301 Ponce, Puerto Rico</span>
             </br>
             <span class="text-muted">(787) 243-8373</span>
-            </br>
+            <br \>
+            <br \>
         </form>
     </main>
     
