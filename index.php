@@ -8,11 +8,11 @@
 		switch($p){
 
 			case "Inicio":
-				include "home.php";
+				include "inicio.php";
 				break;
 
-			case "Register":
-				include "register.php";
+			case "Registrate":
+				include "registrate.php";
 				break;
 			
 			case "Log in":
@@ -32,12 +32,12 @@
 				break;
 
 			default:
-				include "home.php";
+				include "inicio.php";
 				break;
 		}
 
 	}
-	else{include "home.php";}
+	else{include "inicio.php";}
 	
 
 ?>

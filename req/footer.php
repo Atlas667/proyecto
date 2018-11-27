@@ -1,4 +1,6 @@
+
 <footer class="footer">
+    <hr>
     <div class="container text-center">
         <a href="https://www.facebook.com/Millennium-Tint-and-Detailing-275699582454140/" class="fa fa-facebook"></a>
         </br>

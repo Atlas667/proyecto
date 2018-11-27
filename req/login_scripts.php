@@ -9,7 +9,7 @@
 
 	if($p == "login"){
 
-		$user = $_POST["inputUsername"];
+		$user = strtolower(trim($_POST["inputUsername"]));
 		$pass = hash("sha256", $_POST["inputPassword"]);
 
 		$list = ["josue" => "aac09534114879f13117bfd3e5a85bd0443ec7f776e737258de48f449788c4f1", 
@@ -20,17 +20,17 @@
 		  	if($list[$user] == $pass){
 		  		$_SESSION["username"] = $user;
 		  		echo "Log in succesful!";
-		  		header("refresh:3;url=http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php");
+		  		header("refresh:1;url=http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php");
 		  		exit();
 		  	}else{
 			  	echo "Log in unsuccesful.";
-			  	header("refresh:3;url=http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Log in");
+			  	header("Location: http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Log in&e=1");
 			  	exit();
 		  	}
 		}else
 		{
 		  	echo "Log in unsuccesful.";
-		  	header("refresh:3;url=http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Log in");
+		  	header("Location: http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Log in&e=1");
 		  	exit();
 		}
 

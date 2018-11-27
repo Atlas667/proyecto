@@ -18,18 +18,28 @@
     include "req/nav.php";
   ?>
   
-  <body style="margin-top: 3%">
+  <body>
     
     <main role="main">
 
+      <div class="origin text-light">
+        <div class="col-5 p-lg-5">
+          <h1 class="font-weight-normal">Punny headline</h1>
+          <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
       <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center rounded bg-dark text-light">
           <div class="col-md-9 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Millenium Tint & Design</h1>
             <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
           </div>
           <img class=" rounded" style="max-width:100%;
-max-height:100%;" src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/42193764_2141534665870613_1246593839389474816_n.jpg?_nc_cat=103&oh=fc4f999a51e989c4047b87bb88055d71&oe=5C2A92FF" alt="First slide">
+max-height:100%;" ssrc="pics/car.jpg">
         </div>
 
       <div class="container">

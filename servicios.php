@@ -5,6 +5,7 @@
         <title>Millenium Tint & Design</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
     
     </head>
     
@@ -23,40 +24,44 @@
             <div class="product-device shadow-sm d-none d-md-block"></div>
             <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-        
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-              <div class="my-3 py-3">
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="home" role="tabpanel">
+            <div class="my-3 py-3">
                 <h2 class="display-5">Lavado Sencillo</h2>
                 <p class="lead">And an even wittier subheading.</p>
               </div>
               <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Lavado Detallado</h2>
-                <p class="lead">And an even wittier subheading.</p>
-              </div>
-              <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
-        </div>
-        
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Tintes Industriales de Cristales</h2>
-                <p class="lead">And an even wittier subheading.</p>
-              </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
-            <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-              <div class="my-3 py-3">
-                <h2 class="display-5">Tintes de Focos</h2>
-                <p class="lead">And an even wittier subheading.</p>
-              </div>
-              <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-            </div>
           </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Lavado Sencillo</h2>
+                <p class="lead">And an even wittier subheading.</p>
+              </div>
+              <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="tab-pane fade" id="messages" role="tabpanel">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Lavado Sencillo</h2>
+                <p class="lead">And an even wittier subheading.</p>
+              </div>
+              <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+          <div class="tab-pane fade" id="settings" role="tabpanel">
+            <div class="my-3 py-3">
+                <h2 class="display-5">Lavado Sencillo</h2>
+                <p class="lead">And an even wittier subheading.</p>
+              </div>
+              <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          </div>
+        </div>
+
+        <script>
+          $('#myList a').on('click', function (e) {
+          e.preventDefault()
+          $(this).tab('show')
+          })
+        </script>
         
         <!-- Footer -->
         <?php

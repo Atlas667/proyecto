@@ -8,10 +8,10 @@
     <ul class="navbar-nav mr-auto">
       <?php
         $p;
-        $menuList = ["Inicio", "Servicios", "Productos", "Contactanos", "Log in"];
+        $menuList = ["Inicio", "Servicios", "Productos", "Contactanos", "Log in", "Registrate"];
         foreach($menuList as $s){
-          if(isset($_SESSION["username"]) && $s == "Log in"){
-             echo '<li class="nav-item nav-link">' . $s . '</a></li>';
+          if(isset($_SESSION["username"]) && $s == "Log in" || isset($_SESSION["username"]) && $s == "Registrate"){
+             
           }
           elseif($p == $s){
             echo '<li class="nav-item"><a class="nav-link active" href="?p=' . $s . '">' . $s . '</a></li>';
@@ -27,14 +27,14 @@
             <circle cx="20" cy="21" r="1"></circle>
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
           </svg>
-          Cart
+          Carrito
         </a>
       </li>
     </ul>
     <ul class="navbar-nav">
       <?php
         if(isset($_SESSION["username"])){
-            echo '<li class="nav-item"><a class="text-right btn btn-success" href="profile.php">' . $_SESSION["username"] . '</a></li> &nbsp;&nbsp;&nbsp;';
+            echo '<li class="nav-item"><a class="text-right btn btn-success" href="perfil.php">' . $_SESSION["username"] . '</a></li> &nbsp;&nbsp;&nbsp;';
 
             echo '<li class="nav-item"><a class="text-right btn btn-outline-danger" href="req/login_scripts.php?p=logout"> Log out </a></li>';
           }
@@ -42,3 +42,5 @@
     </ul>
   </div>
 </nav>
+<br/ >
+<br/ >

@@ -5,3 +5,20 @@
 @media (max-width: @screen-sm) {
     .jumbotron{font-size: 14px;}
 }
+
+.checked {
+    color: orange;
+}
+
+body {
+    background-color: #E8E8E8;
+}
+
+.origin{
+	margin-top: 5px;
+	display:block;
+	background-image: url("../pics/car.jpg");
+	background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+}
