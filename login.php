@@ -1,3 +1,8 @@
+<?php
+    if(isset($_SESSION["username"])){
+      header("Location: index.php");
+    }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,31 +21,12 @@
   <br \>
   <br \>
   
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">MTD</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicios.html">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="productos.html">Productos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactanos.html">Contactanos</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Log in</a>
-              </li>
-            </ul>
-        </div>
-    </nav>
+  <?php
+    if(isset($_SESSION["username"])){
+
+    }
+    include "req/nav.php";
+  ?>
     
 
   <body style="background-color: #f5f5f5">
@@ -49,9 +35,10 @@
   	<br \>
     
     <main role="main" class="container col-md-5">
-        <form class="form-signin text-center">
+        <form action="login_scripts.php?p=login" method="post" class="form-signin text-center">
             <img class="mb-4" src="https://i.postimg.cc/y8h9BBgD/logo.png" alt="" width="144" height="144">
             <h1 class="h3 mb-3 font-weight-normal">Log in</h1>
+<<<<<<< HEAD
             <label for="inputEmail" class="sr-only">Email address</label>
             <input id="inputEmail" class="form-control" placeholder="Email" required="true" autofocus="" type="email">
             <label for="inputPassword" class="sr-only">Password</label>
@@ -72,8 +59,27 @@
             <span class="text-muted">(787) 243-8373</span>
             <br \>
             <br \>
+=======
+            <!-- Email ó Username-->
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input name="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" type="text">
+            <!-- Password -->
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input name="inputPassword" class="form-control" placeholder="Password" required="" type="password">
+            <br \>
+            <!-- Sign in Button -->
+            <button class="btn btn-lg btn-success btn-block" type="submit">Log in</button>
+            <br \>
+>>>>>>> e8637a910c4131c4bc226285795dea93b6eaabaa
         </form>
+        <button href="registrate.php" class="btn btn-lg btn-primary btn-block" >Registrate</button>
+        <br \>
     </main>
+
+    <!-- Footer -->
+    <?php
+      include("req/footer.php");
+    ?>
     
     <br \>
     <br \>
