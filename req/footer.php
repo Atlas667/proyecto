@@ -1,5 +1,5 @@
 
-<footer class="footer">
+<footer class="footer bg-dark">
     <hr>
     <div class="container text-center">
         <a href="https://www.facebook.com/Millennium-Tint-and-Detailing-275699582454140/" class="fa fa-facebook"></a>
@@ -9,7 +9,7 @@
         <span class="text-muted">Calle villa #301 Ponce, Puerto Rico</span>
         </br>
         <span class="text-muted">(787) 243-8373</span>
-        </br>
-        </br>
+        <br \>
+        <br \>
     </div>
 </footer>

@@ -20,12 +20,8 @@
   
   <br \>
   <br \>
-  <br \>
   
   <?php
-    if(isset($_SESSION["username"])){
-
-    }
     include "req/nav.php";
   ?>
     
@@ -40,34 +36,28 @@
             <?php
                 if(isset($_GET["e"]) && $_GET["e"] == 1){
                     echo '<div class="alert alert-danger" role="alert">
-                        Usuario no encontrado.
+                        Credenciales incorrectas
                     </div>';
                 }
             ?>
-            
             <!-- Email ó Username-->
             
             <label for="inputUsername" class="sr-only">Username</label>
             <input name="inputUsername" class="form-control" placeholder="Username" required="" autofocus="" type="text">
             <!-- Password -->
             <label for="inputPassword" class="sr-only">Password</label>
-            <input name="inputPassword" class="form-control" placeholder="Password" required="" type="password">
+            <input name="inputPassword" class="form-control mt-1" placeholder="Password" required="" type="password">
             <br \>
             <!-- Sign in Button -->
             <button class="btn btn-lg btn-success btn-block" type="submit">Log in</button>
-            <br \>
         </form>
-        <button href="registrate.php" class="btn btn-lg btn-primary btn-block" >Registrate</button>
-        <br \>
+        <button type="button" href="index.php?p=Registrate" class="mt-2 btn btn-lg btn-primary btn-block">Registrate</button>
     </main>
 
     <!-- Footer -->
     <?php
       include("req/footer.php");
     ?>
-    
-    <br \>
-    <br \>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

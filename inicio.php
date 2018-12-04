@@ -24,7 +24,7 @@
 
       <div class="origin text-light">
         <div class="col-5 p-lg-5">
-          <h1 class="font-weight-normal">Punny headline</h1>
+          <h1 class="pt-4 font-weight-normal">Millenium Tint & Design</h1>
           <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
           <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>

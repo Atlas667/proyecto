@@ -10,7 +10,7 @@
         $p;
         $menuList = ["Inicio", "Servicios", "Productos", "Contactanos", "Log in", "Registrate"];
         foreach($menuList as $s){
-          if(isset($_SESSION["username"]) && $s == "Log in" || isset($_SESSION["username"]) && $s == "Registrate"){
+          if($loggedIn && $s == "Log in" || $loggedIn && $s == "Registrate"){
              
           }
           elseif($p == $s){
@@ -20,20 +20,10 @@
             echo '<li class="nav-item"><a class="nav-link" href="?p=' . $s . '">' . $s . '</a></li>';}
         }
       ?>
-      <li class="nav-item navbar-right">
-        <a class="nav-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
-            <circle cx="9" cy="21" r="1"></circle>
-            <circle cx="20" cy="21" r="1"></circle>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-          </svg>
-          Carrito
-        </a>
-      </li>
     </ul>
     <ul class="navbar-nav">
       <?php
-        if(isset($_SESSION["username"])){
+        if($loggedIn){
             echo '<li class="nav-item"><a class="text-right btn btn-success" href="perfil.php">' . $_SESSION["username"] . '</a></li> &nbsp;&nbsp;&nbsp;';
 
             echo '<li class="nav-item"><a class="text-right btn btn-outline-danger" href="req/login_scripts.php?p=logout"> Log out </a></li>';

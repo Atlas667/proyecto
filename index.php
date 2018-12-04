@@ -1,6 +1,10 @@
 <?php
 	
 	session_start();
+	global $loggedIn;
+	if(isset($_SESSION["username"])){
+		$loggedIn = True;
+	}
 	global $p;
 	if(isset($_GET["p"])){
 		$p = $_GET["p"];
