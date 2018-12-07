@@ -53,14 +53,14 @@
 		}else
 		{
 		  	echo "Log in unsuccesful.";
-		  	header("Location: http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Log in&e=1");
+		  	header("Location: ../index.php?p=Log in&e=1");
 		  	exit();
 		}
 
 	}elseif($p == "logout") {
 		
 		session_destroy();
-		header("Location: http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php");
+		header("Location: ../index.php");
 		exit();
 
 	}elseif($p == "registrate") {
@@ -73,7 +73,7 @@
 
 		array_push($list, ["username" => $user, "password" => $pass]);
 		$_SESSION["username"] = $user;
-		header("refresh:1;url=http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php");
+		header("refresh:1;url= ../index.php");
 
 	}
 
