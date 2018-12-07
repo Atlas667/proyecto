@@ -1,5 +1,5 @@
 
-<footer class="footer bg-dark">
+<footer class="footer flex mb-5 ml-5 mr-5 bg-dark rounded">
     <hr>
     <div class="container text-center">
         <a href="https://www.facebook.com/Millennium-Tint-and-Detailing-275699582454140/" class="fa fa-facebook"></a>
