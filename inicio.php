@@ -25,7 +25,7 @@
       <div class="origin text-light">
         <div class="col-5 p-lg-5">
           <h1 class="pt-4 font-weight-normal">Millenium Tint & Design</h1>
-          <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+          <p class="lead font-weight-normal">Tienda de tintes, lavado y servicios automotricces de calidad.</p>
           <a class="btn btn-outline-secondary" href="#">Coming soon</a>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
@@ -36,7 +36,7 @@
         <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center rounded bg-dark text-light">
           <div class="col-md-9 p-lg-5 mx-auto my-5">
             <h1 class="display-4 font-weight-normal">Millenium Tint & Design</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple's marketing pages.</p>
+            <p class="lead font-weight-normal">La tienda para todas tus necesidades automotrices.</p>
           </div>
           <img class=" rounded" style="max-width:100%;
 max-height:100%;" ssrc="pics/car.jpg">

@@ -10,6 +10,6 @@
   
   array_push($comments, ["user" => $user, "estrellas" => $estrellas, "comment" => $comment]);
 
-  header("Location: http://sici4997.uprp.edu/~josue.nadal/proyecto/index.php?p=Contactanos");
+  header("Location: ../index.php?p=Contactanos");
 ?>
 

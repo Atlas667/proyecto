@@ -10,6 +10,7 @@
 
     <title>Checkout</title>
   </head>
+
   <body>
     <div class="container">
       <div class="py-5 text-center">

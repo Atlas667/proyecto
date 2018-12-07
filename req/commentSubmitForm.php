@@ -4,9 +4,9 @@
   <form class="p-2 mb-3 border rounded" action="req/commentSubmitScript.php">
 
   	<label for="estrellas">Estrellas</label>
-    <input type="hidden" id="estrellas" name="estrellas" value="1" required>
+    <input type="hidden" id="estrellas" name="estrellas" value="0" required>
     <div id="stars" class="pb-0">
-      <span class="fa fa-star checked" id="star1" onclick="add(this,1)"></span>
+      <span class="fa fa-star" id="star1" onclick="add(this,1)"></span>
       <span class="fa fa-star" id="star2" onclick="add(this,2)"></span>
       <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
       <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>

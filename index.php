@@ -34,6 +34,9 @@
 			case "Servicios":
 				include "servicios.php";
 				break;
+			case "Checkout":
+				include "checkout.php";
+				break;
 
 			default:
 				include "inicio.php";

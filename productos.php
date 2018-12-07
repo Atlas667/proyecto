@@ -23,7 +23,7 @@
                   <p class="lead text-muted">Selección amplia de productos para autos.</p>
                   <p>
                     <a href="login.html" class="btn btn-primary my-2">Log in</a>
-                    <a href="checkout.html" class="btn btn-success my-2">Checkout</a>
+                    <a href="index.php?p=Checkout" class="btn btn-success my-2">Checkout</a>
                   </p>
                 </div>
             </section>

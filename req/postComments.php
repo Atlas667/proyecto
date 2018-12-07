@@ -12,13 +12,14 @@
 	    
 	    echo '<div>';
 	    	echo '<strong class="text-gray-dark">@' . $k["user"] . '</strong>';
-		    echo "<div class='commentStars' style='width:auto;' id='' value=" . $k['estrellas'] .">
-			      <span class='fa fa-star' id='cstar1' ></span>
-			      <span class='fa fa-star' id='cstar2' ></span>
-			      <span class='fa fa-star' id='cstar3' ></span>
-			      <span class='fa fa-star' id='cstar4' ></span>
-			      <span class='fa fa-star' id='cstar5' ></span>
-			    </div>";
+		    echo "<div  class='commentStars' style='width:auto;' id='' value=" . $k['estrellas'] .">";
+	for($i = 0; $i < $k['estrellas']; $i++){
+		echo "<span class='fa fa-star checked'></span>";
+	}
+	for($i = 0; $i < 5-$k['estrellas']; $i++){
+		echo "<span class='fa fa-star'></span>";
+	}
+		echo "</div>";
 	    echo "</div>";
     echo '</p>';
 

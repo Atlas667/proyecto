@@ -21,3 +21,6 @@ body {
     background-repeat: no-repeat;
   	height: 700PX;
 }
+
+.greyed{
+	color: grey;}
