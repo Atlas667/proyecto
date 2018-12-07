@@ -11,7 +11,17 @@
       <span class="fa fa-star" id="star3" onclick="add(this,3)"></span>
       <span class="fa fa-star" id="star4" onclick="add(this,4)"></span>
       <span class="fa fa-star" id="star5" onclick="add(this,5)"></span>
+     
       <script>
+      
+      <input type="hidden" name="rating" id="rating" value="4" />
+<ul onMouseOut="resetRating(1);">
+    <li class='selected' onmouseover="highlightStar(this,1);" onmouseout="removeHighlight(1);" onClick="addRating(this,1);">&#9733;</li>
+    <li class='selected' onmouseover="highlightStar(this,1);" onmouseout="removeHighlight(1);" onClick="addRating(this,1);">&#9733;</li>
+    <li class='selected' onmouseover="highlightStar(this,1);" onmouseout="removeHighlight(1);" onClick="addRating(this,1);">&#9733;</li>
+    <li class='selected' onmouseover="highlightStar(this,1);" onmouseout="removeHighlight(1);" onClick="addRating(this,1);">&#9733;</li>
+    <li class='' onmouseover="highlightStar(this,1);" onmouseout="removeHighlight(1);" onClick="addRating(this,1);">&#9733;</li>
+  <ul>
         function add(ths,sno){
 
           for (var i=1;i<=5;i++){
